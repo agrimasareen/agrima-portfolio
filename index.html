@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#eeeae0">
+<meta name="description" content="Agrima Sareen — Computer Science, Data Science, Software and Applied AI.">
+<title>Agrima Sareen — Selected Work</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+:root{--paper:#eeeae0;--paper2:#e4dfd3;--ink:#252722;--muted:#77786f;--olive:#59634a;--rust:#b65e43;--line:rgba(37,39,34,.22);--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--mono:'DM Mono',monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}
+.shell{width:min(1280px,calc(100% - 64px));margin:auto}.mono{font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.serif{font-family:var(--serif);font-weight:500}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:600 14px var(--mono);letter-spacing:.08em}.brand span{color:var(--rust)}nav{display:flex;gap:30px;font-size:12px;color:#5f6058}nav a{transition:color .2s}nav a:hover{color:var(--rust)}.menu{display:none;background:none;border:0;font-size:22px}
+.hero{position:relative;padding:76px 0 70px;border-bottom:1px solid var(--line);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:end}.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:24px}.eyebrow:before{content:"";width:34px;height:1px;background:var(--rust)}h1{font-size:clamp(64px,10vw,144px);line-height:.82;letter-spacing:-.085em;margin:0;font-weight:500}h1 .line2{display:block;margin-left:12vw;color:var(--olive)}h1 em{font-family:var(--serif);font-weight:500;letter-spacing:-.07em}.hero-aside{padding:0 0 8px 28px;border-left:1px solid var(--line);max-width:330px}.hero-aside p{font-size:16px;line-height:1.6;margin:14px 0 24px}.hero-aside .serif{font-size:24px;line-height:1.2}.hero-meta{display:flex;justify-content:space-between;margin-top:62px;padding-top:14px;border-top:1px solid var(--line)}
+.stamp{position:absolute;right:4%;top:50px;width:92px;height:92px;border:1px solid var(--rust);border-radius:50%;display:grid;place-items:center;color:var(--rust);font:10px var(--mono);text-align:center;transform:rotate(12deg);line-height:1.5}.section{padding:82px 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:180px 1fr;gap:30px;margin-bottom:42px}.section-title{font-size:clamp(38px,5vw,64px);line-height:.98;letter-spacing:-.06em;margin:0}.section-title em{color:var(--olive)}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:10vw}.intro-copy{font-size:clamp(20px,2.5vw,30px);line-height:1.35;letter-spacing:-.035em;max-width:660px}.intro-copy em{font-family:var(--serif);color:var(--olive)}.intro-note{align-self:end;max-width:360px;font-size:14px;line-height:1.7;color:var(--muted)}.project-list{display:grid;gap:22px}.project{display:grid;grid-template-columns:90px 1fr 1fr;min-height:260px;border-top:1px solid var(--line);padding:25px 0;gap:25px;position:relative;transition:background .3s}.project:last-child{border-bottom:1px solid var(--line)}.project-num{font:12px var(--mono);color:var(--rust);padding-top:8px}.project-main{display:flex;flex-direction:column;justify-content:space-between}.project-kicker{font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.project h3{font-size:clamp(28px,4vw,48px);line-height:.98;letter-spacing:-.06em;font-weight:500;margin:18px 0 10px}.project h3 em{font-family:var(--serif);color:var(--olive)}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.tag{font:10px var(--mono);border:1px solid var(--line);padding:7px 9px;border-radius:30px;color:#62635b}.project-detail{display:flex;flex-direction:column;justify-content:space-between;padding:8px 0 4px 25px;border-left:1px solid var(--line)}.project-detail p{font-size:14px;line-height:1.7;max-width:430px;color:#5e6058;margin:0}.project-link{align-self:flex-start;font:11px var(--mono);text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid var(--rust);padding-bottom:6px;margin-top:24px}.project-link:hover{color:var(--rust)}.project:nth-child(2) .project-main{padding-left:2vw}.project:nth-child(3) .project-detail{background:var(--paper2);padding:22px 24px;border:0}.project:nth-child(4) .project-main{padding-left:1vw}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.skill-block{border-top:1px solid var(--line);padding:20px 0}.skill-block h3{font:11px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--rust);margin:0 0 18px}.skill-list{display:flex;gap:9px;flex-wrap:wrap}.skill{font-size:15px;border-bottom:1px solid var(--line);padding:0 0 7px;margin-right:12px}
+.resume-band{background:var(--olive);color:var(--paper);padding:48px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px}.resume-band .mono{color:#d1d2c7}.resume-band h2{font-size:clamp(32px,4vw,54px);letter-spacing:-.06em;line-height:1;margin:12px 0 0;font-weight:500}.download{border:1px solid rgba(238,234,224,.65);padding:15px 19px;font:11px var(--mono);text-transform:uppercase;letter-spacing:.06em;transition:.2s}.download:hover{background:var(--paper);color:var(--olive)}
+.contact{padding:90px 0 40px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact h2{font-size:clamp(54px,9vw,110px);line-height:.85;letter-spacing:-.08em;margin:20px 0}.contact h2 em{font-family:var(--serif);color:var(--rust)}.contact-copy{align-self:end;max-width:420px}.contact-copy p{font-size:16px;line-height:1.7;color:#62635b}.contact-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:25px}.contact-links a{font:11px var(--mono);border-bottom:1px solid var(--rust);padding-bottom:6px}.footer{border-top:1px solid var(--line);display:flex;justify-content:space-between;padding:18px 0 24px;margin-top:70px}.footer .mono{font-size:9px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}.cursor-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--rust);margin-left:8px;vertical-align:middle}
+@media(max-width:760px){.shell{width:min(100% - 38px,600px)}.topbar{height:64px}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--paper);padding:20px;z-index:5;border-bottom:1px solid var(--line);flex-direction:column;gap:18px}.menu{display:block}.topbar.open nav{display:flex}.hero{padding:65px 0 45px}.hero-grid{grid-template-columns:1fr;gap:40px}.stamp{width:70px;height:70px;right:2%;top:28px;font-size:8px}h1{font-size:clamp(62px,17vw,100px)}h1 .line2{margin-left:9vw}.hero-aside{margin-left:10vw;max-width:360px}.hero-meta{margin-top:40px}.section{padding:60px 0}.section-head{grid-template-columns:1fr;gap:15px;margin-bottom:30px}.intro-grid{grid-template-columns:1fr;gap:25px}.intro-note{margin-left:15vw}.project{grid-template-columns:38px 1fr;gap:12px;min-height:0}.project-main{min-height:190px}.project-detail{grid-column:2;border-left:0;border-top:1px solid var(--line);padding:17px 0 0}.project:nth-child(2) .project-main,.project:nth-child(4) .project-main{padding-left:0}.project:nth-child(3) .project-detail{padding:18px}.skills-grid{grid-template-columns:1fr}.resume-band{grid-template-columns:1fr;padding:30px 24px}.download{justify-self:start}.contact-grid{grid-template-columns:1fr;gap:15px}.contact-copy{margin-left:12vw}.footer{gap:15px;flex-wrap:wrap}.footer .mono{font-size:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar" id="top">
+  <a class="brand" href="#top">AS<span>—</span>26</a>
+  <button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav aria-label="Main navigation"><a href="#about">ABOUT</a><a href="#work">SELECTED WORK</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="stamp">CURIOUS<br>BY DESIGN<br>✳ 2026</div>
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow mono">PORTFOLIO / COMPUTER SCIENCE & DATA SCIENCE</div>
+      <h1>Agrima<br><span class="line2"><em>Sareen.</em></span></h1>
+    </div>
+    <aside class="hero-aside">
+      <div class="mono">01 — A SHORT INTRODUCTION</div>
+      <p class="serif">Building at the intersection of software, data and applied AI.</p>
+      <p>Computer Science student at VIT Vellore, exploring ideas through code, collaborative projects and practical prototypes.</p>
+      <a class="project-link" href="#work">EXPLORE SELECTED WORK ↘</a>
+    </aside>
+  </div>
+  <div class="hero-meta mono"><span>VIT VELLORE · INDIA</span><span>OPEN TO LEARNING & COLLABORATION</span><span>2026—</span></div>
+</section>
+
+<section class="section reveal" id="about">
+  <div class="section-head"><div class="mono">01 / ABOUT</div><h2 class="section-title">A little context.<br><em>A lot to explore.</em></h2></div>
+  <div class="intro-grid">
+    <p class="intro-copy">I’m a Computer Science and Engineering student specialising in Data Science, interested in how thoughtful software can turn <em>complex ideas into useful tools.</em></p>
+    <p class="intro-note">My work so far spans backend development, machine learning, web technologies and early explorations in agentic AI. I enjoy learning by building, testing ideas and working with people who approach problems differently.</p>
+  </div>
+</section>
+
+<section class="section reveal" id="work">
+  <div class="section-head"><div class="mono">02 / SELECTED WORK</div><h2 class="section-title">Experiments,<br><em>made tangible.</em></h2></div>
+  <div class="project-list">
+    <article class="project">
+      <div class="project-num">01 /</div>
+      <div class="project-main"><div><div class="project-kicker">VINHACK 2026 · COLLABORATIVE PROJECT</div><h3>Metadata<br><em>Scrubber</em></h3></div><div class="tags"><span class="tag">PYTHON</span><span class="tag">FLASK</span><span class="tag">EXIFREAD</span></div></div>
+      <div class="project-detail"><p>A collaborative tool focused on identifying and removing file metadata. Contributed to backend development and image EXIF handling, including API integration.</p><a class="project-link" href="https://github.com/IpshitaSingh2007/metadata_scrubber" target="_blank" rel="noreferrer">VIEW REPOSITORY ↗</a></div>
+    </article>
+    <article class="project">
+      <div class="project-num">02 /</div>
+      <div class="project-main"><div><div class="project-kicker">ACADEMIC · TEAM PROJECT</div><h3>Healthcare<br><em>Agentic AI</em></h3></div><div class="tags"><span class="tag">LANGGRAPH</span><span class="tag">FASTAPI</span><span class="tag">RAG</span></div></div>
+      <div class="project-detail"><p>An academic prototype exploring agent workflows and retrieval-augmented generation for evidence-aware symptom guidance, with attention to uncertainty, privacy and evaluation. This is a prototype, not a validated diagnostic system.</p><span class="mono">PYTHON · MEDLINEPLUS RAG · API DESIGN</span></div>
+    </article>
+    <article class="project">
+      <div class="project-num">03 /</div>
+      <div class="project-main"><div><div class="project-kicker">MACHINE LEARNING · INDIVIDUAL PROJECT</div><h3>Iris ML<br><em>Classifier</em></h3></div><div class="tags"><span class="tag">PYTHON</span><span class="tag">SCIKIT-LEARN</span></div></div>
+      <div class="project-detail"><p>Implemented and compared Decision Tree and K-Nearest Neighbours models on the Iris dataset, with a simple interface for exploring model predictions.</p><a class="project-link" href="https://github.com/agrimasareen/iris-ml-classifier" target="_blank" rel="noreferrer">VIEW REPOSITORY ↗</a></div>
+    </article>
+    <article class="project">
+      <div class="project-num">04 /</div>
+      <div class="project-main"><div><div class="project-kicker">PROTOTYPE · DEVELOPER TOOLS</div><h3>Gemini Terminal<br><em>AI Agent</em></h3></div><div class="tags"><span class="tag">PYTHON</span><span class="tag">GOOGLE GEN AI SDK</span></div></div>
+      <div class="project-detail"><p>A Python-based terminal assistant prototype exploring how a language model can support developer workflows through a lightweight command-line interface.</p><span class="mono">EXPERIMENTAL BUILD</span></div>
+    </article>
+    <article class="project">
+      <div class="project-num">05 /</div>
+      <div class="project-main"><div><div class="project-kicker">CONCEPT / PROTOTYPE · DEVELOPER EXPERIENCE</div><h3>Code Readability<br><em>AI Agent</em></h3></div><div class="tags"><span class="tag">AI-ASSISTED REVIEW</span><span class="tag">CODE QUALITY</span></div></div>
+      <div class="project-detail"><p>An evolving concept for an AI-assisted tool that explores code readability feedback and clearer developer workflows across repositories and IDEs.</p><span class="mono">CONCEPT IN PROGRESS</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="section reveal" id="skills">
+  <div class="section-head"><div class="mono">03 / CAPABILITIES</div><h2 class="section-title">Tools I use.<br><em>Ideas I explore.</em></h2></div>
+  <div class="skills-grid">
+    <div class="skill-block"><h3>Languages & web</h3><div class="skill-list"><span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">HTML</span><span class="skill">CSS</span></div></div>
+    <div class="skill-block"><h3>Frameworks & tools</h3><div class="skill-list"><span class="skill">Flask</span><span class="skill">FastAPI</span><span class="skill">LangGraph</span><span class="skill">scikit-learn</span><span class="skill">Git</span></div></div>
+    <div class="skill-block"><h3>Areas of interest</h3><div class="skill-list"><span class="skill">Applied AI</span><span class="skill">Machine Learning</span><span class="skill">RAG</span><span class="skill">Agentic AI</span></div></div>
+    <div class="skill-block"><h3>Currently exploring</h3><div class="skill-list"><span class="skill">Backend systems</span><span class="skill">Data-driven tools</span><span class="skill">Developer experience</span></div></div>
+  </div>
+</section>
+
+<section class="section reveal" id="resume">
+  <div class="resume-band"><div><div class="mono">04 / THE FORMAL VERSION</div><h2>Want the details<br>in one place?</h2></div><a class="download" href="Agrima_Sareen_Resume.pdf" download>DOWNLOAD RESUME ↓</a></div>
+</section>
+
+<section class="contact reveal" id="contact">
+  <div class="contact-grid">
+    <div><div class="mono">05 / CONTACT</div><h2>Let's make<br><em>something.</em></h2></div>
+    <div class="contact-copy"><p>I’m interested in learning, building and collaborating on thoughtful software projects. If something here caught your attention, feel free to reach out.</p><div class="contact-links"><a href="mailto:agrimasareen19@gmail.com">SEND AN EMAIL ↗</a><a href="https://github.com/agrimasareen" target="_blank" rel="noreferrer">GITHUB ↗</a></div></div>
+  </div>
+</section>
+</main>
+<footer class="footer"><span class="mono">AGRIMA SAREEN · PORTFOLIO 2026</span><span class="mono">BUILT WITH CURIOSITY & CODE</span><a class="mono" href="#top">BACK TO TOP ↑</a></footer>
+</div>
+<script>
+const menu=document.querySelector('.menu'),bar=document.querySelector('.topbar');
+menu.addEventListener('click',()=>{const open=bar.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{bar.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
